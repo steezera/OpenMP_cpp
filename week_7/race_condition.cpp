@@ -13,6 +13,7 @@ int main() {
         cout << "Thread " << omp_get_thread_num()
              << " added " << local_sum
              << ", sum now is " << sum << "\n";
+            omp_get_num_threads();
     }
 
     cout << "Final sum: " << sum << "\n";
